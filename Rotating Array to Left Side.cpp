@@ -10,7 +10,7 @@ int main() {
     cin>>k;
 
     for (int i = 0; i < 6; ++i) {
-        B[(i+k)%n] = A[i];
+        B[(i+n-k)%n] = A[i];
     }
     for (int i = 0; i < 6; ++i) {
         cout<<A[i]<<", ";

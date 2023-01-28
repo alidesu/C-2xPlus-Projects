@@ -6,11 +6,11 @@ int main() {
     int B[6] {0};
     int k = 0;
     int n = 6;
-    cout<<"Enter the no. of position-(k) that you want to move left: ";
+    cout<<"Enter the no. of position-(k) that you want to move right: ";
     cin>>k;
 
     for (int i = 0; i < 6; ++i) {
-        B[(i+n-k)%n] = A[i];
+        B[(i+k)%n] = A[i];
     }
     for (int i = 0; i < 6; ++i) {
         cout<<A[i]<<", ";
