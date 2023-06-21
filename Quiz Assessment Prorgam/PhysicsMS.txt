@@ -1,0 +1,69 @@
+1) Which of the following is an example of a scalar quantity?
+
+a) Velocity
+b) Force
+c) Distance
+d) Acceleration
+
+2) The SI unit of electric current is:
+
+a) Ampere
+b) Volt
+c) Ohm
+d) Watt
+
+3) Which of the following is a fundamental force of nature?
+
+a) Frictional force
+b) Gravitational force
+c) Magnetic force
+d) Tension force
+
+4) The bending of light when it passes from one medium to another is known as:
+
+a) Reflection
+b) Refraction
+c) Dispersion
+d) Diffraction
+
+5) Newton's second law of motion is given by the equation:
+
+a) F = ma
+b) F = mv
+c) F = md
+d) F = ms
+
+6) The rate at which work is done or energy is transferred is known as:
+
+a) Power
+b) Force
+c) Work
+d) Energy
+
+7) Which of the following is NOT a type of electromagnetic radiation?
+
+a) X-rays
+b) Gamma rays
+c) Sound waves
+d) Radio waves
+
+8) Which of the following is an example of a non-renewable energy source?
+
+a) Solar power
+b) Wind power
+c) Coal
+d) Hydroelectric power
+
+9) The law of conservation of energy states that:
+
+a) Energy cannot be created
+b) Energy cannot be destroyed
+c) Energy cannot change forms
+d) Energy cannot be transferred
+
+(10) The phenomenon of an object staying at rest or in uniform motion unless acted upon by an external force is known as:
+
+a) Newton's law of motion
+b) Hooke's law
+c) Pascal's law
+d) Newton's first law of motion
