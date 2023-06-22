@@ -16,32 +16,42 @@ void physics(char (&m)[10]) {
         char line[500];
         int lineCount = 0;
 
-
+        int whileCounter = 0;
         while (phyMS.getline(line, 500)) {
             lineCount++;
 
-            // Read five lines
+            // Read six lines
             if (lineCount <= 6) {
                 cout << line << endl;
             }
 
-
             // Skip one line
-            if (lineCount == 6) {
+            if (lineCount == 7) {
                 lineCount = 0; // Reset the line counter
+                cout<<"\nAwnser this MCQ: (a-d) / (only smallcase): ";
+                cin>>awns[whileCounter];
+                m[whileCounter]=awns[whileCounter];
+                whileCounter++;
+                cout<<endl;
             }
+
+
         }
+
+        cout<<"\nAwnser this MCQ: (a-d) / (only smallcase): ";
+        cin>>awns[9];
+        m[9]=awns[9];
     }
 
-    cout<<"---------------------------------------------"<<endl;
-
-    cout<<"Now, Awsner them in sequnce (1-10) / (a-d) / (Only smallcase): \n";
-    for (int i = 0; i < 10; ++i) {
-        cout<<"MCQ no."<<i+1<<" : ";
-        cin>>awns[i];
-        m[i]=awns[i];
-
-    }
+//    cout<<"---------------------------------------------"<<endl;
+//
+//    cout<<"Now, Awsner them in sequnce (1-10) / (a-d) / (Only smallcase): \n";
+//    for (int i = 0; i < 10; ++i) {
+//        cout<<"MCQ no."<<i+1<<" : ";
+//        cin>>awns[i];
+//        m[i]=awns[i];
+//
+//    }
     cout<<"\n---------------------------------------------"<<endl;
 
     cout << "Student Given Answer: ";
@@ -76,6 +86,9 @@ void physics(char (&m)[10]) {
         cout<<" Failed";
     }
 
+    cout<<"Percentage: "<<(float(marks) / 10)*100<<"%"<<endl;
+
+
     //Now, Writing all our data into the studentDB file.
 
 
@@ -101,6 +114,7 @@ void physics(char (&m)[10]) {
             write1<<" Failed\n";
         }
 
+        write1<<"Percentage: "<<(float(marks) / 10)*100<<"%"<<endl;
         write1<<"\n---------------------------------------------"<<endl;
     }
 
@@ -122,32 +136,42 @@ void biology(char (&m)[10]) {
         char line[500];
         int lineCount = 0;
 
-
+        int whileCounter = 0;
         while (bioMS.getline(line, 500)) {
             lineCount++;
 
-            // Read five lines
+            // Read six lines
             if (lineCount <= 6) {
                 cout << line << endl;
             }
 
-
             // Skip one line
-            if (lineCount == 6) {
+            if (lineCount == 7) {
                 lineCount = 0; // Reset the line counter
+                cout<<"\nAwnser this MCQ: (a-d) / (only smallcase): ";
+                cin>>awns[whileCounter];
+                m[whileCounter]=awns[whileCounter];
+                whileCounter++;
+                cout<<endl;
             }
+
+
         }
+
+        cout<<"\nAwnser this MCQ: (a-d) / (only smallcase): ";
+        cin>>awns[9];
+        m[9]=awns[9];
     }
 
-    cout<<"---------------------------------------------"<<endl;
-
-    cout<<"Now, Awsner them in sequnce (1-10) / (a-d) / (Only smallcase): \n";
-    for (int i = 0; i < 10; ++i) {
-        cout<<"MCQ no."<<i+1<<" : ";
-        cin>>awns[i];
-        m[i]=awns[i];
-
-    }
+//    cout<<"---------------------------------------------"<<endl;
+//
+//    cout<<"Now, Awsner them in sequnce (1-10) / (a-d) / (Only smallcase): \n";
+//    for (int i = 0; i < 10; ++i) {
+//        cout<<"MCQ no."<<i+1<<" : ";
+//        cin>>awns[i];
+//        m[i]=awns[i];
+//
+//    }
     cout<<"\n---------------------------------------------"<<endl;
 
     cout << "Student Given Answer: ";
@@ -175,6 +199,14 @@ void biology(char (&m)[10]) {
         cout << correctQuestions[i]+1 << " ";
     }
 
+    cout<<"\nStatus: ";
+    if(marks >3){
+        cout<<" Passed"<<endl;
+    } else {
+        cout<<" Failed\n";
+    }
+
+    cout<<"Percentage: "<<(float(marks) / 10)*100<<"%"<<endl;
 
     //Now, Writing all our data into the studentDB file.
 
@@ -193,6 +225,15 @@ void biology(char (&m)[10]) {
         for (int i = 0; i < marks; i++) {
             write1 << correctQuestions[i]+1 << " ";
         }
+
+        write1<<"\nStatus: ";
+        if(marks >3){
+            write1<<" Passed"<<endl;
+        } else {
+            write1<<" Failed\n";
+        }
+        write1<<"Percentage: "<<(float(marks) / 10)*100<<"%"<<endl;
+
         write1<<"\n---------------------------------------------"<<endl;
     }
 
@@ -215,32 +256,41 @@ void chemistry(char (&m)[10]) {
         char line[500];
         int lineCount = 0;
 
-
+        int whileCounter = 0;
         while (chemMS.getline(line, 500)) {
             lineCount++;
 
-            // Read five lines
+            // Read six lines
             if (lineCount <= 6) {
                 cout << line << endl;
             }
 
-
             // Skip one line
-            if (lineCount == 6) {
+            if (lineCount == 7) {
                 lineCount = 0; // Reset the line counter
+                cout<<"\nAwnser this MCQ: (a-d) / (only smallcase): ";
+                cin>>awns[whileCounter];
+                m[whileCounter]=awns[whileCounter];
+                whileCounter++;
+                cout<<endl;
             }
+
+
         }
+
+        cout<<"\nAwnser this MCQ: (a-d) / (only smallcase): ";
+        cin>>awns[9];
+        m[9]=awns[9];
     }
-
-    cout<<"---------------------------------------------"<<endl;
-
-    cout<<"Now, Awsner them in sequnce (1-10) / (a-d) / (Only smallcase): \n";
-    for (int i = 0; i < 10; ++i) {
-        cout<<"MCQ no."<<i+1<<" : ";
-        cin>>awns[i];
-        m[i]=awns[i];
-
-    }
+//    cout<<"---------------------------------------------"<<endl;
+//
+//    cout<<"Now, Awsner them in sequnce (1-10) / (a-d) / (Only smallcase): \n";
+//    for (int i = 0; i < 10; ++i) {
+//        cout<<"MCQ no."<<i+1<<" : ";
+//        cin>>awns[i];
+//        m[i]=awns[i];
+//
+//    }
     cout<<"\n---------------------------------------------"<<endl;
 
     cout << "Student Given Answer: ";
@@ -268,6 +318,15 @@ void chemistry(char (&m)[10]) {
         cout << correctQuestions[i]+1 << " ";
     }
 
+    cout<<"\nStatus: ";
+    if(marks >3){
+        cout<<" Passed"<<endl;
+    } else {
+        cout<<" Failed\n";
+    }
+
+    cout<<"Percentage: "<<(float(marks) / 10)*100<<"%"<<endl;
+
     //Now, Writing all our data into the studentDB file.
 
 
@@ -285,6 +344,16 @@ void chemistry(char (&m)[10]) {
         for (int i = 0; i < marks; i++) {
             write1 << correctQuestions[i]+1 << " ";
         }
+
+        write1<<"\nStatus: ";
+        if(marks >3){
+            write1<<" Passed"<<endl;
+        } else {
+            write1<<" Failed\n";
+        }
+
+        write1<<"Percentage: "<<(float(marks) / 10)*100<<"%"<<endl;
+
         write1<<"\n---------------------------------------------"<<endl;
     }
 
